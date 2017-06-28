@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.css"/>
+</head>
+<body>
+<div ng-app="hrApp" ng-controller="ShoppingController">
+    <ul>
+        <li ng-repeat="action in demoActionList">
+            <img ng-mouseover="hoverImg(action)" ng-mouseleave="leaveImg(action)" style = "height: 200px; width: 200px" ng-src = "{{action.url}}">
+                {{action.label}}
+            </img>
+            <div ng-show="action.mytest">
+                {{action.pret}}
+            </div>
+        </li>
+    </ul>
+</div>
+<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="ShoppingController.js"></script>
+</body>
+</html>
