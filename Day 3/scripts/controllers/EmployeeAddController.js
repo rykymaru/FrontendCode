@@ -3,20 +3,9 @@
  */
 hrApp.controller('EmployeeAddController', ['$scope', '$location', '$window', 'UserService', function($scope, $location, $window, UserService){
     $scope.userlist = UserService;
-
+    $scope.user = {};
     $scope.save = function() {
-        UserService.push({
-            FirstName: $scope.firstname,
-            LastName: $scope.lastname,
-            Email: $scope.email,
-            Phone: $scope.phone,
-            Hiredate: $scope.hiredate,
-            Salary: $scope.salary,
-            Job: $scope.job,
-            Comision: $scope.commision,
-            Dept: $scope.department,
-            Manager: $scope.manager
-        });
+        UserService.push($scope.user);
         $window.alert('User Adaugat!');
     }
 
@@ -25,16 +14,7 @@ hrApp.controller('EmployeeAddController', ['$scope', '$location', '$window', 'Us
     }
 
     $scope.reset=function() {
-        $scope.manager=undefined;
-        $scope.commision=undefined;
-        $scope.firstname=undefined;
-        $scope.lastname=undefined;
-        $scope.department=undefined;
-        $scope.hiredate=undefined;
-        $scope.job=undefined;
-        $scope.email=undefined;
-        $scope.phone=undefined;
-        $scope.salary=undefined;
+        $scope.user=undefined;
     }
 
     $scope.descriptionShow = false;
