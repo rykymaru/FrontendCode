@@ -1,0 +1,91 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Add Employee</h2>
+    </div>
+    <div class="panel-body">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>First Name:</label>
+                    <input type="text" ng-model="firstname">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Last Name:</label>
+                    <input type="text" ng-model="lastname">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" ng-model="email">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Phone Number:</label>
+                    <input type="text" ng-model="phone">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Hire Date:</label>
+                    <input type="text" ng-model="hiredate">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Job Title:</label>
+                    <input type="text" ng-model="job">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Salary:</label>
+                    <input type="text" ng-model="salary">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Commission:</label>
+                    <input type="text" ng-model="commision">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Department:</label>
+                    <input type="text" ng-model="department">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label>Manager:</label>
+                    <input type="text" ng-model="manager">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5"></div>
+            <div class="col-md-7">
+                <div class="container">
+                    <button class="btn btn-default" ng-click="back()">Back</button>
+                    <button class="btn btn-default" ng-click="reset()">Reset</button>
+                    <button class="btn btn-default" ng-click="save()">Save</button>
+                    <button class="btn btn-default" ng-click="showhide()">Show/Hide</button>
+                </div>
+            </div>
+            <div ng-show="descriptionShow" style="height: 800px; width: 800px"> {{userlist}}</div>
+        </div>
+
+    </div>
+</div>
