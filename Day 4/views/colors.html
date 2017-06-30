@@ -8,6 +8,8 @@
 <span ng-class ="newcolor.class" ng-model="myColor">Some text</span>
 
 <div>
-    <input type="text" ng-model="primul" ng-repeat="color in colors | OrderBy color.text">
-    <input type="text" ng-model="second" ng-repeat="color in colors | OrderBy color.text">
+    <input ng-model="primul">
+    <input ng-model="second">
+    <span ng-repeat="color in colors | orderBy : second">{{color.text}}<br></span>
+    <span ng-repeat="color in colors | filter : primul">{{color.text}}<br></span>
 </div>
