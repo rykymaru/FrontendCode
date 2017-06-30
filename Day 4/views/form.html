@@ -1,0 +1,14 @@
+<form ng-submit="butonFct()" name="OurForm" class="our-form">
+    unCamp: <input name="input" ng-model="uncamp" required>
+    <span class="error" ng-show="OurForm.input.$error.required">Required!</span><br>
+    unCamp = {{uncamp}}<br>
+    OurForm.input.$valid = {{OurForm.input.$valid}}<br>
+    OurForm.input.$invalid = {{OurForm.input.$invalid}}<br>
+    OurForm.input.$error = {{OurForm.input.$error}}<br>
+    OurForm.$error = {{OurForm.$error}}<br>
+    OurForm.input.$pristine = {{OurForm.input.$pristine}}<br>
+    OurForm.input.$dirty ={{OurForm.input.$dirty}}<br>
+    OurForm.$submitted = {{OurForm.$submitted}}<br>
+    <input type="submit" id="submit" value="Submit" />
+</form>
+<div>{{list}}</div>
