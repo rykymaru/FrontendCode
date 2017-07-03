@@ -1,6 +1,8 @@
 hrApp.controller('EmployeeViewController', ['$scope', '$http', '$routeParams', '$location', 'EmployeeService',
     function ($scope, $http, $routeParams, $location, EmployeeService) {
-
+        $scope.requiredErrorMessage = "Please fill out this form!";
+        $scope.patternDateNotRespectedMessage = "The date format should be yyyy-mm-dd";
+        $scope.patternCommisionNotRespectedMessage = "Commission should be in the format 0.XX";
         /*
         $scope.employee = {
          "id": 100,

@@ -1,0 +1,60 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Job</h2>
+    </div>
+    <div class="panel-body">
+        <ng-form name="employeeEditForm">
+            <div class="row">
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+                    <div class="form-group" ng-class="{ 'has-error': employeeEditForm.firstName.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="firstName">Job Id:</label>
+                        <input type="text" id="firstName" name="firstName" ng-model="job.jobId" class="form-control" required  />
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+                    <div class="form-group" ng-class="{ 'has-error': employeeEditForm.lastName.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="lastName">Job Title:</label>
+                        <input type="text" id="lastName" name="lastName" ng-model="job.jobTitle" class="form-control" required />
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+                    <div class="form-group" ng-class="{ 'has-error': employeeEditForm.email.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="email">Max Salary:</label>
+                        <input type="text" id="email" name="email" ng-model="job.maxSalary" class="form-control" required/>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <!--TODO#HR3-->
+                    <div class="form-group" ng-class="{ 'has-error': employeeEditForm.phoneNumber.$invalid }">
+                        <!--TODO#HR2-->
+                        <label for="phone">Min Salary:</label>
+                        <input type="text" id="phone" name="phoneNumber" ng-model="job.minSalary" class="form-control" required />
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5"></div>
+                <div class="col-md-7">
+                    <div class="container">
+                        <!--TODO#HR4-->
+                        <button ng-click="reset()">Reset</button>
+                        <button ng-click="create()">Save</button>
+                        <button ng-click="delete()">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </ng-form>
+    </div>
+</div>

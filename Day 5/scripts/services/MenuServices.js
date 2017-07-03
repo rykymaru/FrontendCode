@@ -6,5 +6,9 @@ hrApp.value('EmployeeActionsService', [
         {
             label: "Add employee",
             url: "#/employeeAdd"
+        },
+        {
+            label: "List Jobs",
+            url: "#/listJobs"
         }
     ]);
