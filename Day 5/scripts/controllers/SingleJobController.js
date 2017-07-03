@@ -1,8 +1,8 @@
 /**
  * Created by Teodor.Tincu on 7/3/2017.
  */
-hrApp.controller('SingleJobController', ['$scope', '$http', '$routeParams', '$location', 'CommonResourcesFactory','EmployeeService',
-    function ($scope, $http, $routeParams, $location, CommonResourcesFactory, EmployeeService) {
+hrApp.controller('SingleJobController', ['$scope', '$http', '$routeParams', '$location', 'CommonResourcesFactory',
+    function ($scope, $http, $routeParams, $location, CommonResourcesFactory) {
         $scope.requiredErrorMessage = "Please fill out this form!";
         $scope.patternDateNotRespectedMessage = "The date format should be yyyy-mm-dd";
         $scope.patternCommisionNotRespectedMessage = "Commission should be in the format 0.XX";
